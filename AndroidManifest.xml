@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.columbusagain.citibytes"
+    android:versionCode="14"
+    android:versionName="1.13" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <permission
+        android:name="com.columbusagain.citibytes.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <!-- <uses-permission android:name="com.columbusagain.citibytes.permission.MAPS_RECEIVE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+
+    <application
+        android:name="com.columbusagain.citibytes.CitiBytesApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Citibytes" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBezSi4RhIq8XfgRbccafkL_QrdVrUvJbI" />
+
+        <activity
+            android:name="com.columbusagain.citibytes.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.ContactDetailsActivity"
+            android:label="@string/title_activity_contact_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.CAActivity"
+            android:label="@string/title_activity_search_city"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.GooglePlusActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.GoglActivity"
+            android:label="@string/title_activity_gogl"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.ChainNamesActivity"
+            android:label="@string/title_activity_gogl"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.CategoryListActivity"
+            android:label="@string/title_activity_category_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.ManualLocationActivity"
+            android:label="@string/title_activity_manual_location"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.columbusagain.citibytes.AttributeListActivity"
+            android:label="@string/title_activity_attribute_list" 
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service
+            android:name="com.columbusagain.citibytes.syncadapter.AuthenticatorService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name="com.columbusagain.citibytes.syncadapter.SyncService"
+            android:exported="false"
+            android:process=":sync" >
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+        <provider
+            android:name="com.columbusagain.citibytes.syncadapter.StubProvider"
+            android:authorities="com.columbusagain.citibytes.syncadapter"
+            android:exported="false"
+            android:syncable="true" />
+
+        <activity
+            android:name="com.columbusagain.citibytes.AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name="com.luminous.pick.CustomGalleryActivity" 
+            android:screenOrientation="portrait">
+           <intent-filter>
+               <action android:name="citibytes.ACTION_PICK" />
+               <action android:name="citibytes.ACTION_MULTIPLE_PICK" />
+
+               <category android:name="android.intent.category.DEFAULT" />
+           </intent-filter>
+       </activity>
+    </application>
+
+</manifest>

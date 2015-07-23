@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+<ListView 
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:cacheColorHint="@android:color/transparent"
+        android:id="@+id/rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/list_selector"
+        android:divider="#dadada"
+        android:dividerHeight="1dp"
+        />
+
+<LinearLayout 
+       android:id="@+id/empty_view"
+       android:layout_gravity="center"
+       android:gravity="center"
+       	android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+    
+    <TextView 
+        android:id="@+id/empty_text"
+        android:visibility="gone"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:drawableTop="@drawable/error_image"
+	    android:text="No Pincodes Found"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    />
+    </LinearLayout>
+    
+</LinearLayout>

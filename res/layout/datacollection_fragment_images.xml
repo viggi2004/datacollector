@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+        android:id="@+id/layout_scroll_view"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView 
+        android:visibility="gone"
+        android:id="@+id/view_business_name"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#487AC8"
+        android:textStyle="bold"/>
+        
+        <TextView 
+        android:visibility="gone"
+        android:id="@+id/view_subtitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Image Gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+        
+     <TextView
+                android:id="@+id/business_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold" />
+            <View 
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_height="2dp"
+                android:background="@drawable/saparetor"/>
+     
+     <LinearLayout 
+         android:background="#3a76dc"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <TextView
+             android:id="@+id/business_card_text"
+             android:paddingLeft="8dp"
+             android:layout_marginTop="4dp"
+             android:layout_marginBottom="4dp"
+             android:textSize="12sp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/white"
+             android:text="BUSINESS CARD (*)"/>
+        <!--   <LinearLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="8dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginTop="4dp"
+             android:layout_marginBottom="4dp"
+             android:orientation="vertical">
+         <TextView 
+             android:layout_gravity="center_horizontal"
+             android:textSize="12sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/white"
+             android:text="View all"/>
+         <View 
+             android:layout_gravity="center_horizontal"
+             android:layout_width="38dp"
+             android:layout_height="2dp"
+             android:background="@drawable/saparetor"/>
+         </LinearLayout>-->
+         
+         
+     </LinearLayout>
+     
+    
+     
+     <com.columbusagain.citibytes.cutomviews.ExpandableGridView
+        android:id="@+id/gridview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:columnWidth="96dp"
+        android:gravity="center"
+        android:isScrollContainer="true"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="8dp" >
+    </com.columbusagain.citibytes.cutomviews.ExpandableGridView>
+   
+    <!--  
+     <RelativeLayout 
+         android:background="#dfdfe1"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton 
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/add_pic"
+            android:id="@+id/image1"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"         
+            android:scaleType="centerInside"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@android:color/transparent"/>
+        <ImageButton 
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_pic"
+            android:id="@+id/image2"
+            android:scaleType="centerInside"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@android:color/transparent"/>
+        <ImageButton 
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_pic"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:id="@+id/image3"
+            android:scaleType="centerInside"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    -->
+     <LinearLayout 
+         android:background="#3a76dc"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+         <TextView 
+             android:id="@+id/gallery_title_text"
+             android:layout_weight="1"
+             android:layout_marginLeft="8dp"
+             android:layout_marginTop="4dp"
+             android:layout_marginBottom="4dp"
+             android:textSize="12sp"
+             android:layout_width="0dip"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/white"
+             android:text="GALLERY"/>
+        <!--   <LinearLayout 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="8dp"
+             android:layout_marginLeft="8dp"
+             android:layout_marginTop="4dp"
+             android:layout_marginBottom="4dp"
+             android:orientation="vertical">
+         <TextView 
+             android:layout_gravity="center_horizontal"
+             android:textSize="12sp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/white"
+             android:text="View all"/>
+         <View 
+             android:layout_gravity="center_horizontal"
+             android:layout_width="38dp"
+             android:layout_height="2dp"
+             android:background="@drawable/saparetor"/>
+         </LinearLayout>-->
+         </LinearLayout>
+         <com.columbusagain.citibytes.cutomviews.ExpandableGridView
+        android:id="@+id/gridview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:columnWidth="96dp"
+        android:gravity="center"
+        android:isScrollContainer="true"
+        android:numColumns="auto_fit"
+        android:stretchMode="spacingWidthUniform"
+        android:verticalSpacing="8dp" >
+    </com.columbusagain.citibytes.cutomviews.ExpandableGridView>
+    <!--  
+    <RelativeLayout 
+         android:background="#dfdfe1"
+        android:layout_margin="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton 
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/add_pic"
+            android:id="@+id/image4"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"         
+            android:scaleType="centerInside"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@android:color/transparent"/>
+        <ImageButton 
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_pic"
+            android:id="@+id/image5"
+            android:scaleType="centerInside"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@android:color/transparent"/>
+        <ImageButton 
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_pic"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="right"
+            android:id="@+id/image6"
+            android:scaleType="centerInside"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>-->
+    <LinearLayout 
+        android:id="@+id/photo_attribute_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+    
+    <Button
+         android:id="@+id/upload_button"
+         android:layout_gravity="bottom|center_horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Submit"
+         android:layout_margin="16dp"
+         android:background="@drawable/button_background"
+         android:textColor="@android:color/white"
+         />
+    
+    <Button
+        android:visibility="gone"
+         android:id="@+id/content_verify_button"
+         android:layout_gravity="bottom|center_horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Content Verified"
+         android:layout_margin="16dp"
+         android:background="@drawable/button_background"
+         android:textColor="@android:color/white"
+         />
+    
+    </LinearLayout>
+   </ScrollView>
+     
+
+</LinearLayout>

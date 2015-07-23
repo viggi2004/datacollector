@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dip">
+    
+    <ImageView 
+        android:layout_above="@+id/login_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/login_background_logo"/>
+    <TextView 
+        android:id="@+id/login_text"
+        android:layout_centerInParent="true"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6D6D6D"
+        android:textSize="20sp"
+        android:text="Login With"/>
+    
+    <com.google.android.gms.common.SignInButton
+        android:layout_below="@+id/login_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sign_in_button"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+         />
+    
+</RelativeLayout>

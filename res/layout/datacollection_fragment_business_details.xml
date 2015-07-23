@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/edit_layout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/business_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold" />
+            <View 
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_height="2dp"
+                android:background="@drawable/saparetor"/>
+            
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Business Description"
+                android:textStyle="bold" />
+            
+            <EditText 
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="top|left"
+                android:background="@drawable/text_background_rectangle"
+                android:id="@+id/business_description"
+                android:layout_width="match_parent"
+                android:padding="8dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="100dp"
+                android:layout_height="wrap_content"/>
+            
+            <View 
+                android:layout_width="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_height="2dp"
+                android:background="@drawable/saparetor"/>
+
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#B2B2B2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp" >
+
+                <CheckBox
+                    android:id="@+id/check_box_select_all"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/business_check_box_selector"
+                    android:drawableLeft="@drawable/empty_space_checkbox"
+                    android:text="ALL"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:paddingLeft="2dp"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="OPERATION HOURS (*)"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp" >
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/check_box_monday"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/business_check_box_selector"
+                    android:singleLine="true"
+                    android:text="Monday"
+                    android:textColor="#3D3D3D"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:scrollbars="none"
+                    android:id="@+id/spinnerMonFrom"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerMonTo"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/apply_to_all"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp" >
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/check_box_tuesday"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/business_check_box_selector"
+                    android:singleLine="true"
+                    android:text="Tuesday"
+                    android:textColor="#3D3D3D"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerTueFrom"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerTueTo"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp" >
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/check_box_wednesday"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/business_check_box_selector"
+                    android:singleLine="true"
+                    android:text="Wednesday"
+                    android:textColor="#3D3D3D"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerWedFrom"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerWedTo"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                 >
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/check_box_thursday"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/business_check_box_selector"
+                    android:singleLine="true"
+                    android:text="Thursday"
+                    android:textColor="#3D3D3D"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerThuFrom"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerThuTo"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                >
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/check_box_friday"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/business_check_box_selector"
+                    android:singleLine="true"
+                    android:text="Friday"
+                    android:textColor="#3D3D3D"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerFriFrom"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerFriTo"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                >
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/check_box_saturday"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/business_check_box_selector"
+                    android:singleLine="true"
+                    android:text="Saturday"
+                    android:textColor="#3D3D3D"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSatFrom"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerSatTo"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/all" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                >
+
+                <CheckBox
+                    android:checked="true"
+                    android:id="@+id/check_box_sunday"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/business_check_box_selector"
+                    android:singleLine="true"
+                    android:text="Sunday"
+                    android:textColor="#3D3D3D"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSunFrom"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <Spinner
+                    android:id="@+id/spinnerSunTo"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:layout_width="0dip"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/contact_details_edit_text_background"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:visibility="invisible"
+                     android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/all" />
+            </LinearLayout>
+            <Button 
+        android:id="@+id/proceed"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+    
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/view_layout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:scrollbars="none" >
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        <include layout="@layout/datacollection_fragment_business_details_view"/>
+        <Button 
+        android:id="@+id/next"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"/>
+        </LinearLayout>
+        </ScrollView>
+    
+    
+
+</LinearLayout>

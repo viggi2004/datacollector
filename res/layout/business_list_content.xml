@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+    
+    <TextView 
+        android:id="@+id/business_indicator"
+        android:layout_width="5dp"
+        android:background="#000000"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/business_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Business Name"
+            android:textColor="#2870E4"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address_line_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address Line1" />
+
+        <TextView
+            android:id="@+id/address_line_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address Line2" />
+
+        <TextView
+            android:id="@+id/address_line_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address Line3" />
+        
+        <TextView
+            android:id="@+id/address_line_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address Line4" />
+    </LinearLayout>
+
+</LinearLayout>

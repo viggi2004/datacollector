@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ContactDetailsActivity" >
+    
+    <ImageView 
+        android:layout_margin="16dp"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_contact_background"/>
+    
+    <TextView 
+        android:text="SUBMIT CONTACT DETAILS"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#828282"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View 
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"        
+        android:background="#d0d0d0"/>
+    
+    
+    
+    <EditText 
+        android:id="@+id/mobile_contact"
+        android:padding="8dp"
+         android:drawablePadding="16dp"
+         android:singleLine="true"
+         android:inputType="number"
+         android:maxLength="10"
+        android:background="@drawable/contact_details_edit_text_background"
+        android:drawableLeft="@drawable/mobile_icon"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:textColorHint="#7E7E7E"
+        android:hint="Mobile Number"
+        android:layout_height="wrap_content"/>
+    <EditText 
+        android:singleLine="true"
+         android:inputType="number"
+        android:id="@+id/phone_contact"
+        android:padding="8dp"
+        android:background="@drawable/contact_details_edit_text_background"
+        android:layout_margin="16dp"
+        android:drawableLeft="@drawable/phone_icon"
+        android:layout_width="match_parent"
+        android:hint="Business Phone Number"
+        android:textColorHint="#7E7E7E"
+        android:drawablePadding="16dp"
+        android:layout_height="wrap_content"/>
+    
+    <Button
+        android:id="@+id/submit_button"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_margin="16dp" 
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:textColor="#FAEFE0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="SUBMIT"
+        />
+    
+
+
+</LinearLayout>

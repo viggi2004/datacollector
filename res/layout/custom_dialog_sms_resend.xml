@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Select A Number to Send Message"
+        android:textColor="#2D2D2D"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/saparetor_popup" />
+
+    <ListView
+        android:id="@+id/mobile_numbers_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#E9E9E9"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" />
+
+    <Button
+        android:id="@+id/resend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="32dp"
+        android:background="@drawable/button_background"
+        android:text="Resend"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp" 
+    android:background="#FFFFFF"
+   
+    >
+ 
+     <TextView
+         android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2D2D2D" 
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Add chain name"
+        />
+     
+     <View 
+         android:layout_below="@+id/title"
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="@drawable/saparetor_popup"/>
+     
+     <EditText 
+         android:inputType="textCapWords"
+         android:layout_below="@+id/title"
+         android:id="@+id/chain_name_input"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="16dp"
+         android:paddingLeft="8dp"
+         android:background="@drawable/contact_details_edit_text_background"
+         android:hint="Enter Chain Name"/>
+     
+     <LinearLayout 
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="16dp"
+         android:orientation="horizontal">
+         
+         <Button 
+             android:textColor="@android:color/white"
+             android:layout_margin="16dp"
+             android:id="@+id/add_chain_name"
+             android:background="@drawable/button_background"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:text="Add"
+             android:textStyle="bold"
+             android:layout_height="wrap_content"/>
+         
+         <Button 
+             android:textColor="@android:color/white"
+             android:layout_margin="16dp"
+             android:id="@+id/cancel_chain_name_request"
+             android:background="@drawable/button_background"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:text="Cancel"
+             android:textStyle="bold"
+             android:layout_height="wrap_content"/>
+         
+     </LinearLayout>
+
+   
+        
+</RelativeLayout>

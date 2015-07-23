@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dp" 
+    android:background="#FFFFFF"
+   
+    >
+ 
+     <TextView
+         android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2D2D2D" 
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Discard Business"
+        />
+     
+     <View 
+         android:id="@+id/separator_view"
+         android:layout_below="@+id/title"
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="@drawable/saparetor_popup"/>
+     
+   
+     
+     <TextView 
+         android:id="@+id/message"
+         android:layout_below="@+id/separator_view"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_margin="16dp"
+         android:text="Do you want to discard current business ? "/>
+     
+     <LinearLayout 
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="16dp"
+         android:orientation="horizontal">
+         
+         <Button 
+             android:textColor="@android:color/white"
+             android:layout_margin="16dp"
+             android:id="@+id/ok_button"
+             android:background="@drawable/button_background"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:text="OK"
+             android:textStyle="bold"
+             android:layout_height="wrap_content"/>
+         
+         <Button 
+             android:textColor="@android:color/white"
+             android:layout_margin="16dp"
+             android:id="@+id/cancel_button"
+             android:background="@drawable/button_background"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:text="Cancel"
+             android:textStyle="bold"
+             android:layout_height="wrap_content"/>
+         
+     </LinearLayout>
+
+   
+        
+</RelativeLayout>

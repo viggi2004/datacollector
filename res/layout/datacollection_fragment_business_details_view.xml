@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/view_business_name"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ColumbusAgain"
+        android:textColor = "#487AC8"
+        android:textStyle="bold"/>
+    
+    <TextView 
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Business Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    
+    <View 
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/saparetor"/>
+    
+    
+    
+    <TextView 
+        android:visibility="gone"
+        android:id="@+id/view_business_description_title"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Business Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    <View 
+        android:visibility="gone"
+        android:id="@+id/view_business_description_separator"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/saparetor"/>
+    <TextView 
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/view_business_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="business_description"/>
+    
+    
+    <TextView 
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Operation Hours"/>
+    
+    <View 
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/saparetor"/>
+    <include layout="@layout/business_hours_row" android:id="@+id/monday_layout" android:visibility="gone"/>
+    <include layout="@layout/business_hours_row" android:id="@+id/tuesday_layout" android:visibility="gone"/>
+    <include layout="@layout/business_hours_row" android:id="@+id/wednessday_layout" android:visibility="gone"/>
+    <include layout="@layout/business_hours_row" android:id="@+id/thursday_layout" android:visibility="gone"/>
+    <include layout="@layout/business_hours_row" android:id="@+id/friday_layout" android:visibility="gone"/>
+    <include layout="@layout/business_hours_row" android:id="@+id/saturday_layout" android:visibility="gone"/>
+    <include layout="@layout/business_hours_row" android:id="@+id/sunday_layout" android:visibility="gone"/>
+    
+
+</LinearLayout>

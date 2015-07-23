@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name" translatable="false">CitiBytes</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+    <color name="actionbar_background">#2d6eda</color>
+    <color name="actionbar_text_color">#FFFFFF</color>
+    <color name="map_green">#8ED252</color>
+    <color name="map_orange">#DE6E12</color>
+    <color name="map_red">#FD1A16</color>
+
+    <string name="sign_out_button_name">Sign out</string>
+    <string name="revoke_access_button_name">Revoke access</string>
+    <string name="default_status" />
+    <string name="signing_in_status">Signing in with Google+.</string>
+    <string name="plus_generic_error">Sign in with Google is not available.</string>
+    <string name="revoke_access_status">Revoked access.</string>
+    <string name="revoke_access_error_status">Unable to revoke access.</string>
+    <string name="unknown_person">Unknown</string>
+    <string name="signed_in_status">Signed in as \"%s\".</string>
+    <string name="loading_status">Loading…</string>
+    <string name="signed_out_status">Signed out.</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+
+    <color name="sign_in_background">#FFFFFF</color>
+
+    <string name="title_activity_contact_details">ContactDetailsActivity</string>
+    <string name="title_activity_search_city">SearchCityActivity</string>
+
+    <!-- From Navigation Drawer Sample -->
+    
+    <string-array name="intent_array">
+        <item >Camera</item>
+        <item >Gallery</item>
+    </string-array>
+
+    <string-array name="navigation_list">
+        <item>Map</item>
+        <item>List</item>
+    </string-array>
+    <string-array name="city_array">
+        <item>Chennai</item>
+        <item>Bangalore</item>
+        <item>Hyderabad</item>
+        <item>Cochin</item>
+        <item>Mumbai</item>
+        <item>Kolkata</item>
+        <item>Delhi</item>
+    </string-array>
+    <string-array name="state_array">
+        <item>Tamil Nadu</item>
+        <item>Karnataka</item>
+        <item>Andhra Pradesh</item>
+        <item>Kerala</item>
+        <item>Maharashtra</item>
+        <item>West Bengal</item>
+        <item>New Delhi</item>
+    </string-array>
+    <string-array name="std_array">
+        <item>044</item>
+        <item>080</item>
+        <item>040</item>
+        <item>0484</item>
+        <item>022</item>
+        <item>033</item>
+        <item>011</item>
+    </string-array>
+    <string-array name="time_array">
+        <item>12.00 AM</item>
+        <item>12.30 AM</item>
+        <item>1.00 AM</item>
+        <item>1.30 AM</item>
+        <item>2.00 AM</item>
+        <item>2.30 AM</item>
+        <item>3.00 AM</item>
+        <item>3.30 AM</item>
+        <item>4.00 AM</item>
+        <item>4.30 AM</item>
+        <item>5.00 AM</item>
+        <item>5.30 AM</item>
+        <item>6.00 AM</item>
+        <item>6.30 AM</item>
+        <item>7.00 AM</item>
+        <item>7.30 AM</item>
+        <item>8.00 AM</item>
+        <item>8.30 AM</item>
+        <item>9.00 AM</item>
+        <item>9.30 AM</item>
+        <item>10.00 AM</item>
+        <item>10.30 AM</item>
+        <item>11.00 AM</item>
+        <item>11.30 AM</item>
+        <item>12.00 PM</item>
+        <item>12.30 PM</item>
+        <item>1.00 PM</item>
+        <item>1.30 PM</item>
+        <item>2.00 PM</item>
+        <item>2.30 PM</item>
+        <item>3.00 PM</item>
+        <item>3.30 PM</item>
+        <item>4.00 PM</item>
+        <item>4.30 PM</item>
+        <item>5.00 PM</item>
+        <item>5.30 PM</item>
+        <item>6.00 PM</item>
+        <item>6.30 PM</item>
+        <item>7.00 PM</item>
+        <item>7.30 PM</item>
+        <item>8.00 PM</item>
+        <item>8.30 PM</item>
+        <item>9.00 PM</item>
+        <item>9.30 PM</item>
+        <item>10.00 PM</item>
+        <item>10.30 PM</item>
+        <item>11.00 PM</item>
+        <item>11.30 PM</item>
+    </string-array>
+    <string-array name="navigation_array">
+        <item>Home</item>
+        <item>LeaderBoard</item>
+        <item>ChangeCity</item>
+        <item>MyArea</item>
+        <item>AboutUs</item>
+        <item>ContactUs</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string-array name="category_array">
+        <item>Category1</item>
+        <item>Category2</item>
+        <item>Category3</item>
+        <item>Category4</item>
+        <item>Category5</item>
+        <item>Category6</item>
+        <item>Category7</item>
+        <item>Category8</item>
+        <item>Category9</item>
+        <item>Category10</item>
+        <item>Category11</item>
+        <item>Category12</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <!--  -->
+
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="title_activity_area_search">AreaSearchActivity</string>
+    <string name="title_activity_select_city">SelectCityActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <color name="searchbar_hint">#c7e6ff</color>
+
+    <string name="title_activity_base_navigation_drawer">BaseNavigationDrawerActivity</string>
+
+    <color name="list_item_selected">#CBDFFE</color>
+
+    <string name="action_edit">Edit Business</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_gogl">GoglActivity</string>
+    <string name="business_name">Business Name (*)</string>
+    <string name="business_name_hint">Enter Business Name</string>
+    <string name="chain_name_text">Chain Name if available</string>
+    <string name="address_text">Address (*)</string>
+    <string name="address_hint_one">Address Line 1 (*)</string>
+    <string name="address_hint_two">Address Line 2</string>
+
+    <string-array name="chain_names">
+        <item>Dominos</item>
+        <item>Pizza</item>
+        <item>Chain Name1</item>
+        <item>Chain Name2</item>
+        <item>Chain Name3</item>
+        <item>Chain Name4</item>
+        <item>Chain Name5</item>
+        <item>Chain Name6</item>
+        <item>Chain Name7</item>
+        <item>Chain Name8</item>
+        <item>Chain Name9</item>
+        <item>Chain Name10</item>
+    </string-array>
+
+    <string name="title_activity_category_list">CategoryListActivity</string>
+    <string name="title_activity_manual_location">ManualLocationActivity</string>
+    <string name="otp_instruction">Please enter the code which is sent to the business primary mobile number</string>
+    <string name="title_activity_attribute_list">AttributeListActivity</string>
+    <string name="title_activity_admin">AdminActivity</string>
+
+</resources>

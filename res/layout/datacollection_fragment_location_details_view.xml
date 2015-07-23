@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/view_business_name"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor = "#487AC8"
+        android:textStyle="bold"/>
+    
+    <TextView 
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Location Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+    
+    <View 
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/saparetor"/>
+    <LinearLayout 
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent"
+            android:text="Latitude"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=":"/>
+        <TextView 
+            android:id="@+id/view_latitude_text"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="    --    "/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent"
+            android:text="Longitude"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=":"/>
+        <TextView 
+            android:id="@+id/view_longitude_text"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="    --    "/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_weight="1"
+            android:layout_width="0dip"
+            android:gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent"
+            android:text="Accuracy"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=":"/>
+        <TextView 
+            android:id="@+id/view_accuracy_text"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="    --    "/>
+    </LinearLayout>
+    
+    <Button
+                android:id="@+id/view_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"   
+                android:layout_gravity="bottom"             
+                android:background="@drawable/button_background"
+                android:text="Next"
+                android:textColor="@android:color/white" />
+
+</LinearLayout>

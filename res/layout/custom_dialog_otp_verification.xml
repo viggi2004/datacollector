@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp" 
+    android:background="#FFFFFF"
+   
+    >
+ 
+     <TextView
+         android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2D2D2D" 
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Enter Verification Code"
+        />
+     
+     <View 
+         android:layout_below="@+id/title"
+         android:layout_width="match_parent"
+         android:layout_height="2dp"
+         android:background="@drawable/saparetor_popup"/>
+     
+     <EditText 
+         android:layout_below="@+id/title"
+         android:id="@+id/verification_code_input"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="16dp"
+         android:paddingLeft="8dp"
+         android:inputType="number"
+         android:background="@drawable/contact_details_edit_text_background"
+         android:hint="Code"/>
+     
+     <TextView 
+         android:id="@+id/otp_instruction"
+         android:layout_below="@+id/verification_code_input"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_margin="16dp"
+         android:text="@string/otp_instruction"/>
+     
+     <LinearLayout 
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="16dp"
+         android:orientation="horizontal">
+         
+         <Button 
+             android:textColor="@android:color/white"
+             android:layout_margin="16dp"
+             android:id="@+id/ok_button"
+             android:background="@drawable/button_background"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:text="Verify"
+             android:textStyle="bold"
+             android:layout_height="wrap_content"/>
+         
+         <Button 
+             android:textColor="@android:color/white"
+             android:layout_margin="16dp"
+             android:id="@+id/cancel_button"
+             android:background="@drawable/button_background"
+             android:layout_weight="1"
+             android:layout_width="0dip"
+             android:text="Cancel"
+             android:textStyle="bold"
+             android:layout_height="wrap_content"/>
+         
+     </LinearLayout>
+
+   
+        
+</RelativeLayout>

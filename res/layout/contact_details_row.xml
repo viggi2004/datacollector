@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91" />
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:id="@+id/mobile_number"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/contact_details_edit_text_background"
+        android:hint="Mobile Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:singleLine="true" />
+
+    <ImageButton
+        android:id="@+id/remove_mobile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/cross_btn"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/add_mobile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/add_btn"
+        android:visibility="gone" />
+
+</LinearLayout>
